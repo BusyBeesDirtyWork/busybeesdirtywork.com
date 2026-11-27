@@ -32,6 +32,9 @@
   "email": "info@busybeesdirtywork.com",
   "image": "https://busybeesdirtywork.com/assets/hero-guarded.jpg",
   "logo": "https://busybeesdirtywork.com/assets/logo-badge.jpg",
+  "sameAs": [
+    "https://www.youtube.com/@busybeesdirtywork"
+  ],
   "description": "Land management and wildfire mitigation in Missoula County and southern Lake County, Montana — wildland management, fire abatement, defensible space, excavation, grading, gravel driveways, fencing, and strategic property management.",
   "areaServed": [
     { "@type": "AdministrativeArea", "name": "Missoula County, Montana" },
@@ -999,6 +1002,36 @@
   }
   a:focus-visible,button:focus-visible{outline:3px solid #a9c3ee;outline-offset:3px}
 
+  /* ---------- YouTube links ---------- */
+  .yt-head{
+    display:inline-flex;align-items:center;justify-content:center;flex:none;
+    width:44px;height:44px;border-radius:6px;text-decoration:none;
+  }
+  .yt-head svg{width:34px;height:34px;display:block}
+  .yt-head:hover{background:rgba(255,255,255,.1)}
+  .yt-head:focus-visible{outline:3px solid #a9c3ee;outline-offset:2px}
+  .yt-foot{
+    display:inline-flex;align-items:center;justify-content:center;text-decoration:none;
+    width:44px;height:44px;border-radius:6px;margin-top:2px;
+  }
+  .yt-foot svg{width:32px;height:32px;display:block;flex:none}
+  .yt-foot:hover{background:rgba(255,255,255,.1)}
+  /* Phones: make room in the fixed header for the YouTube icon so it
+     sits fully on-screen next to the menu button instead of clipping
+     off the right edge — narrower header padding and gaps, a smaller
+     brand lockup, and 38px toggle/icon targets. */
+  @media (max-width:560px){
+    .site-head .wrap{padding-left:12px;padding-right:12px}
+    .head-in{gap:8px}
+    .brand{gap:8px;min-width:0}
+    .brand-logo{width:38px;height:38px}
+    .brand-name{font-size:15.5px}
+    .site-head .brand-name small{max-width:148px;font-size:11px}
+    .nav-toggle{width:38px;height:38px}
+    .yt-head{width:38px;height:38px}
+    .yt-head svg{width:30px;height:30px}
+  }
+
   /* ---------- chat greeting label (mobile only) ---------- */
   /* Tawk.to shows its "What property work brought you to us?" greeting
      only on desktop while Online; on phones the bubble sits bare. This
@@ -1105,6 +1138,7 @@
         </div>
       </div>
     </nav>
+    <a class="yt-head" href="https://www.youtube.com/@busybeesdirtywork" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false"><path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81z"/><path fill="#fff" d="M9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a>
   </div>
 </header>
 
@@ -1521,6 +1555,7 @@
         </div>
         <div>Missoula, Montana</div>
         <div><a href="https://busybeesdirtywork.com">busybeesdirtywork.com</a></div>
+        <div><a class="yt-foot" href="https://www.youtube.com/@busybeesdirtywork" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" role="img" aria-hidden="true" focusable="false"><path fill="#FF0000" d="M23.5 6.19a3.02 3.02 0 0 0-2.12-2.14C19.5 3.55 12 3.55 12 3.55s-7.5 0-9.38.5A3.02 3.02 0 0 0 .5 6.19C0 8.07 0 12 0 12s0 3.93.5 5.81a3.02 3.02 0 0 0 2.12 2.14c1.88.5 9.38.5 9.38.5s7.5 0 9.38-.5a3.02 3.02 0 0 0 2.12-2.14C24 15.93 24 12 24 12s0-3.93-.5-5.81z"/><path fill="#fff" d="M9.55 15.57V8.43L15.82 12l-6.27 3.57z"/></svg></a></div>
       </div>
     </div>
     <div class="foot-base">
